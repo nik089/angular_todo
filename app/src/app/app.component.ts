@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +8,15 @@ import { Component} from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  public newitem= "";
-  public items=['item1','item2','item3','item4','item5','item6'];
+  public newitem = "";
+  public items = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6'];
 
-  addItem()
-  {
+  addItem() {
     this.items.push(this.newitem)
   }
 
-  delItem(item)
-{
-  this.items.splice(this.items.indexOf(item))
-}
+  delItem(item) {
+    this.items.splice(this.items.indexOf(item), 1);
+  }
 
 }
